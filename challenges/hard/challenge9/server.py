@@ -52,7 +52,7 @@ def ping_host(host: str, count: int = 4) -> str:
         command = f"ping -c {count} {host}"
         
         # Execute the command
-        result = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT)
+
         
         # Log the command and result
         with open("/tmp/dvmcp_challenge9/logs/ping.log", "a") as f:
