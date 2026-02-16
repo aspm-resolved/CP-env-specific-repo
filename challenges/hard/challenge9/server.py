@@ -85,7 +85,7 @@ def traceroute(host: str) -> str:
         command = f"traceroute {host}"
         
         # Execute the command
-        result = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT)
+
         
         # Log the command and result
         with open("/tmp/dvmcp_challenge9/logs/traceroute.log", "a") as f:
